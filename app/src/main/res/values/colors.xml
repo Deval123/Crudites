@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00BA57</color>
+    <color name="colorPrimaryDark">#c5991a</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorOr">#c5991a</color>
+    <color name="color_tab1">#455C65</color>
+    <color name="color_tab2">#00886A</color>
+    <color name="color_tab3">#8B6B62</color>
+    <color name="color_tab4">#6C4A42</color>
+    <color name="color_tab5">#F63D2B</color>
+    <color name="colorBlue">#027DCA</color>
+    <color name="colorDark">#000000</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="facebook_bg">#3b5998</color>
+    <color name="text_selected">#888</color>
+    <color name="transparent_bg">#fff</color>
+    <color name="colorBG1">#f4e5e7</color>
+    <color name="colorBG2">#f0f0f0</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorGreen">#36921f</color>
+    <color name="colorRed">#d00000</color>
+    <color name="background_app">#f0f0f0</color>
+    <color name="noir_t">#99000000</color>
+    <color name="primary_t">#c5991a</color>
+
+
+    <color name="blue">#348af7</color>
+
+    <color name="temperature_background">@color/blue</color>
+    <color name="temperature_text">@android:color/white</color>
+
+    <color name="green_dot_big">@color/blue</color>
+    <color name="green_dot_small">@color/blue</color>
+</resources>

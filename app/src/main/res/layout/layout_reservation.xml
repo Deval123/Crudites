@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:shimmer="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+	     android:orientation="vertical"
+         android:clickable="true"
+         android:background="@color/colorWhite"
+	     android:layout_width="match_parent"
+	     android:layout_height="match_parent">
+
+
+	     <RelativeLayout
+	          android:layout_width="fill_parent"
+		      android:layout_below="@+id/lll"
+		      android:visibility="visible"
+			  android:orientation="vertical"
+			  android:background="@color/colorWhite"
+	          android:layout_height="match_parent">
+			 <RelativeLayout
+				 android:layout_width="match_parent"
+				 android:id="@+id/imgBox"
+				 android:layout_height="@dimen/_160sdp">
+				 <ImageView
+					 android:layout_width="match_parent"
+					 android:layout_height="@dimen/_140sdp"
+					 android:src="@drawable/assiette"
+					 android:id="@+id/imageDet"
+					 android:scaleType="centerCrop"
+					 />
+				 <View
+					 android:layout_width="match_parent"
+					 android:layout_height="match_parent"
+					 android:background="#99000000"/>
+				 <LinearLayout
+					 android:layout_width="wrap_content"
+					 android:layout_height="wrap_content"
+					 android:paddingLeft="10dp"
+					 android:layout_centerInParent="true"
+					 android:gravity="center"
+					 android:orientation="vertical">
+					 <TextView
+						 android:layout_width="wrap_content"
+						 android:layout_height="wrap_content"
+						 android:textAppearance="?android:textAppearanceMedium"
+						 android:textColor="@color/colorWhite"
+						 android:textSize="20dp"
+						 android:id="@+id/text"
+						 android:gravity="center"
+						 android:text="Assietes crudites multisaveulrs"/>
+					 <TextView
+						 android:layout_width="wrap_content"
+						 android:layout_height="wrap_content"
+						 android:textColor="@color/colorWhite"
+						 android:gravity="center"
+						 android:textSize="12dp"
+						 android:textAppearance="?android:textAppearanceSmall"
+						 android:text="Mais doux, avocat, ..."
+						 android:id="@+id/subtext"/>
+				 </LinearLayout>
+			 </RelativeLayout>
+			 <ImageView
+				 android:layout_width="40dp"
+				 android:layout_height="40dp"
+				 android:src="@mipmap/ic_close_white"
+				 android:id="@+id/close"/>
+
+			 <android.support.v7.widget.CardView
+				 android:id="@+id/card_view"
+				 android:layout_width="match_parent"
+				 android:layout_height="wrap_content"
+				 android:layout_gravity="center"
+				 android:layout_marginLeft="@dimen/_20sdp"
+				 android:layout_marginRight="@dimen/_20sdp"
+				 android:layout_marginTop="@dimen/_minus20sdp"
+				 android:layout_below="@+id/imgBox"
+				 app:cardCornerRadius="@dimen/_20sdp"
+				 app:cardElevation="4dp"
+				 card_view:cardBackgroundColor="@color/colorWhite"
+				 >
+				 <LinearLayout
+					 android:layout_width="match_parent"
+					 android:layout_height="wrap_content"
+					 android:orientation="vertical">
+					 <com.badoualy.stepperindicator.StepperIndicator
+						 android:layout_width="match_parent"
+						 android:layout_height="wrap_content"
+						 android:layout_margin="10dp"
+						 app:stpi_stepCount="5"
+						 android:id="@+id/indicator"
+						 app:stpi_showDoneIcon="true"/>
+
+					 <!--app:stpi_lineDoneColor="@color/colorOr"
+                     app:stpi_indicatorColor="@color/colorOr"-->
+				 </LinearLayout>
+			 </android.support.v7.widget.CardView>
+
+			 <android.support.v4.view.ViewPager
+				 android:id="@+id/pager"
+				 android:layout_marginTop="@dimen/_10sdp"
+				 android:layout_width="match_parent"
+				 android:layout_height="match_parent"
+				 android:layout_below="@+id/imgBox"/>
+		 </RelativeLayout>
+	</RelativeLayout>
+
+</LinearLayout>

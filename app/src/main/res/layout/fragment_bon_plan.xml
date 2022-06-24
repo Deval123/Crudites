@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/header"
+        layout="@layout/header_bar"/>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:background="@color/colorWhite"
+        android:id="@+id/empty_box"
+        android:layout_below="@+id/header"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_150sdp"
+                android:src="@drawable/empty"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="#000"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/empty_title"
+                android:gravity="center"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:text="À découvrir très prochainement"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:id="@+id/empty_sub_title"
+                android:gravity="center"
+                android:visibility="gone"
+                android:text="Vos quizz joués s'afficherons ici"
+                android:textAppearance="?android:textAppearanceSmall"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include
+        layout="@layout/header_bar"/>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/title"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Contactez nous"
+                android:textAppearance="?android:textAppearanceSmall"/>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_objet"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/objet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dip"
+                    android:ems="10"
+                    android:hint="Objet"
+                    android:inputType="text">
+                </EditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_message"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dip"
+                    android:ems="15"
+                    android:hint="Message"
+                    android:inputType="textMultiLine">
+                </EditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/message"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorPrimary"
+                android:id="@+id/send"
+                android:text="Envoyer"
+                android:textColor="#FFF" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="@color/colorOr"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="30dip"
+                    android:id="@+id/icon_phone"
+                    android:text="@string/fa_phone"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text=" Téléphone mobile"
+                        android:textColor="#808080"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/telval"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tel"
+                        android:layout_marginLeft="17dp"
+                        android:text="----------------------"
+                        android:textColor="#808080" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="30dip"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="@color/colorOr"
+                    android:layout_marginLeft="17dp"
+                    android:id="@+id/icon_email"
+                    android:text="@string/fa_envelope"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text=" Email"
+                        android:textColor="#808080"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/emailval"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tel"
+                        android:layout_marginLeft="17dp"
+                        android:text="----------------------"
+                        android:textColor="#808080" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="@color/colorOr"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="30dip"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/icon_adresse"
+                    android:text="@string/fa_map_marker"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/adresse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text=" Adresse"
+                        android:textColor="#808080"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:id="@+id/adresseval"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/adresse"
+                        android:layout_marginLeft="17dp"
+                        android:text="----------------------"
+                        android:textColor="#808080" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/fa_facebook_square"
+                    android:textSize="30dip"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:textColor="@color/facebook_bg"
+                    android:id="@+id/facebook"/>
+
+                <TextView
+                    android:id="@+id/facebookval"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/adresse"
+                    android:layout_marginLeft="17dp"
+                    android:text="----------------------"
+                    android:textColor="#808080" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/fa_linkedin_square"
+                    android:textSize="30dip"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:textColor="#394356"
+                    android:id="@+id/linkedin"/>
+                <TextView
+                    android:id="@+id/linkedinval"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/adresse"
+                    android:layout_marginLeft="17dp"
+                    android:text="----------------------"
+                    android:textColor="#808080" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/fa_twitter_square"
+                    android:textSize="30dip"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:textColor="#55acee"
+                    android:id="@+id/twitter"/>
+
+                <TextView
+                    android:id="@+id/twitterval"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/adresse"
+                    android:layout_marginLeft="17dp"
+                    android:text="----------------------"
+                    android:textColor="#808080" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/fa_instagram"
+                    android:textSize="30dip"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:textColor="#e1474b"
+                    android:id="@+id/instagram"/>
+
+                <TextView
+                    android:id="@+id/instagramval"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/adresse"
+                    android:layout_marginLeft="17dp"
+                    android:text="----------------------"
+                    android:textColor="#808080" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/fa_youtube"
+                    android:textSize="30dip"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:textColor="#D60000"
+                    android:id="@+id/youtube"/>
+
+                <TextView
+                    android:id="@+id/youtubeval"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/adresse"
+                    android:layout_marginLeft="17dp"
+                    android:text="----------------------"
+                    android:textColor="#808080" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

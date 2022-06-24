@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_marginBottom="1dip"
+		android:background="#fff">
+
+		<TextView
+			android:id="@+id/icon_menu"
+			android:layout_width="50dp"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="20dp"
+			android:gravity="center"
+			android:text="@string/fa_glass"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:textColor="#505050"
+			android:textSize="25sp" />
+
+		<TextView
+			android:id="@+id/textViewName_row"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"
+			android:gravity="center_vertical"
+			android:minHeight="50dip"
+			android:text="TextView"
+			android:maxLines="1"
+			android:ellipsize="end"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:textColor="#505050" />
+		<ImageView
+			android:layout_width="25dp"
+			android:id="@+id/chevron"
+			android:layout_gravity="center"
+			android:rotation="180"
+			android:layout_marginRight="10dp"
+			android:layout_alignParentRight="true"
+			android:layout_height="25dp"
+			android:src="@mipmap/ic_chevron_black"/>
+		<Switch
+			android:layout_width="wrap_content"
+			android:layout_marginRight="10dp"
+			android:visibility="gone"
+			android:id="@+id/newletter"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+
+	<View
+	    android:layout_width="fill_parent"
+	    android:layout_height="10dip"
+	    android:visibility="gone"
+		android:background="#fafafa"
+	    android:id="@+id/view_inter"
+	    />
+</LinearLayout>

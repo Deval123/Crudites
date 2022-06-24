@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorDark"
+        android:layout_height="?android:actionBarSize">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@mipmap/ic_back_white"
+            android:visibility="gone"
+            android:id="@+id/back"
+            android:alpha="0.7"
+            android:layout_height="?android:actionBarSize" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+            <com.crudite.apps.utilitaires.TitleTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorOr"
+                android:id="@+id/title"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:ellipsize="end"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textSize="@dimen/_27sdp"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="Crudité espace de dégustation"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorOr"
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:id="@+id/subtitle"
+                android:textSize="@dimen/_10sdp"
+                android:gravity="center"
+                android:text="Boutique"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:visibility="gone"
+        android:background="#ecebeb"/>
+</LinearLayout>
